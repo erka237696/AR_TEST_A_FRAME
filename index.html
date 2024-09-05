@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe-ar.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.0/aframe/build/aframe-ar.js"></script>
+    <script src="https://cdn.rawgit.com/nicolocarpignoli/location-based-ar/master/location-based-aframe.min.js"></script>
+</head>
+<body style="margin : 0px; overflow: hidden;">
+    <a-scene
+      vr-mode-ui="enabled: false"
+      embedded
+      arjs="sourceType: webcam; videoTexture: true;">
+      <a-entity
+        gps-entity-place="latitude: 42.860886; longitude: 74.602222;"
+        gltf-model="Car.glb"
+        scale="10 10 10"
+        rotation="0 0 0">
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
